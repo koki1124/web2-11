@@ -9,8 +9,8 @@
   </style>
  </head>
 <body>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js"></script>
-<script type="text/javascript">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/9/three.min.js"></script>
+    <script type="text/javascript">
 
     var scene = new THREE.Scene();
     var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innewHeight, 0.1, 1000 );
@@ -19,7 +19,7 @@
     renderer.setSize(window.innerWidth,window.innewHeight );
     document.body.appendChild( renderer.domElement );
     
-    //
+    //リサイズ
     window.addEventListener('resize', function() {
        renderer.setSize(window.innerWidth,window.innewHeight );
        camera.aspect = window.innerWidth/window.innewHeight;
