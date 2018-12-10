@@ -44,9 +44,14 @@
 
   // 平行光源
   const directionalLight = new THREE.DirectionalLight(0xFFFFFF);
-  directionalLight.position.set(300, 30, 30);
+  directionalLight.position.set(1, 1, 1);
   // シーンに追加
   scene.add(directionalLight);
+      
+  // 点光源を作成
+  // new THREE.PointLight(色, 光の強さ, 距離, 光の減衰率)
+  const light = new THREE.PointLight(0xFFFFFF, 0, 50, 1.0);
+  scene.add(light);
 
   tick();
 
