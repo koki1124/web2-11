@@ -51,7 +51,7 @@
   //パーティクル
       const particle_geometry = new THREE.Geometry
       const numparticles = 2000;
-      for(const i = 0 ; i < numParticles ; i++){
+      for(var i = 0 ; i < numparticles ; i++){
         particle_geometry.vertices.push(
           new THREE.Vecter3(
             Math.random() * 20 - 10,
